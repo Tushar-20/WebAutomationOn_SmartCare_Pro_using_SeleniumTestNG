@@ -13,10 +13,14 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 
 import basedriver.PageDriver;
+import utilities.ExcelUtils;
 import utilities.GetScreenShot;
 
 public class LoginPage {
 	ExtentTest test;
+	
+	ExcelUtils excelData = new ExcelUtils();
+	
 	public LoginPage(ExtentTest test) {
 		PageFactory.initElements(PageDriver.getCurrentDriver(),this);
 		this.test = test;
@@ -24,7 +28,7 @@ public class LoginPage {
 	
 	@FindBys ({
 		@FindBy(xpath="//body/div[@id='app']/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[1]/div[1]/div[2]/input[1]"),
-	     @FindBy(xpath=("//input[@name=\"username1\"]"))
+	     @FindBy(xpath=("//input[@name=\"username\"]"))
 	})
 	WebElement username;
 	
@@ -58,17 +62,17 @@ public class LoginPage {
 	}
 	
 	public void login() throws InterruptedException, IOException {
-		
+		excelData.ReadExcel();
 		try {
 			test.info("Please enter username");
 			if(username.isDisplayed()) {
-				username.sendKeys("Admin");
+				username.sendKeys(excelData.username);
 				passCase("Username entered");
 			}
 			try {
 				test.info("Please enter Password");
 				if(password.isDisplayed()) {
-					password.sendKeys("admin123");
+					password.sendKeys(excelData.password);
 					passCase("password send");
 				}
 				try {
