@@ -94,7 +94,7 @@ public class LoginPage {
 		
 		
 		} catch(Exception e) {
-			failCase("Login Button was not locatable. Please check the error message.","PasswordFail ");
+			failCase("Login Button was not locatable. Please check the error message.","LoginFail ");
 		}
 	}
 
