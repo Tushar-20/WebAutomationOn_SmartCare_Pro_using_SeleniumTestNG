@@ -1,33 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-01T23:36:29 BDT" name="Default suite" finished-at="2024-12-01T23:36:38 BDT" duration-ms="8603">
+  <suite started-at="2024-12-07T09:28:12 BDT" name="Hospotal Portal" finished-at="2024-12-07T09:28:55 BDT" duration-ms="42913">
     <groups>
     </groups>
-    <test started-at="2024-12-01T23:36:29 BDT" name="Default test" finished-at="2024-12-01T23:36:38 BDT" duration-ms="8603">
+    <test started-at="2024-12-07T09:28:12 BDT" name="Test" finished-at="2024-12-07T09:28:55 BDT" duration-ms="42913">
       <class name="tests.SignUpTest">
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:tests.SignUpTest@16d04d3d]" started-at="2024-12-01T23:36:24 BDT" name="startBrowser" finished-at="2024-12-01T23:36:29 BDT" duration-ms="4895" status="PASS">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:tests.SignUpTest@564fabc8]" started-at="2024-12-07T09:28:09 BDT" name="startBrowser" finished-at="2024-12-07T09:28:12 BDT" duration-ms="2657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method is-config="true" signature="start()[pri:0, instance:tests.SignUpTest@16d04d3d]" started-at="2024-12-01T23:36:29 BDT" name="start" finished-at="2024-12-01T23:36:35 BDT" duration-ms="5828" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:tests.SignUpTest@564fabc8]" started-at="2024-12-07T09:28:12 BDT" name="start" finished-at="2024-12-07T09:28:17 BDT" duration-ms="4909" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="SignUpTest()[pri:0, instance:tests.SignUpTest@16d04d3d]" started-at="2024-12-01T23:36:35 BDT" name="SignUpTest" finished-at="2024-12-01T23:36:37 BDT" duration-ms="2313" status="PASS">
+        <test-method signature="SignUpTest()[pri:0, instance:tests.SignUpTest@564fabc8]" started-at="2024-12-07T09:28:17 BDT" name="SignUpTest" finished-at="2024-12-07T09:28:19 BDT" duration-ms="2344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignUpTest -->
-        <test-method is-config="true" signature="report()[pri:0, instance:tests.SignUpTest@16d04d3d]" started-at="2024-12-01T23:36:37 BDT" name="report" finished-at="2024-12-01T23:36:38 BDT" duration-ms="421" status="PASS">
+        <test-method is-config="true" signature="report()[pri:0, instance:tests.SignUpTest@564fabc8]" started-at="2024-12-07T09:28:19 BDT" name="report" finished-at="2024-12-07T09:28:20 BDT" duration-ms="360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tests.SignUpTest@16d04d3d]" started-at="2024-12-01T23:36:38 BDT" name="close" finished-at="2024-12-01T23:36:38 BDT" duration-ms="191" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.SignUpTest@564fabc8]" started-at="2024-12-07T09:28:55 BDT" name="close" finished-at="2024-12-07T09:28:55 BDT" duration-ms="188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- tests.SignUpTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="tests.Personal_Info_Test">
+        <test-method is-config="true" signature="start()[pri:0, instance:tests.Personal_Info_Test@3febb011]" started-at="2024-12-07T09:28:20 BDT" name="start" finished-at="2024-12-07T09:28:20 BDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="Personal_Info_Test()[pri:0, instance:tests.Personal_Info_Test@3febb011]" started-at="2024-12-07T09:28:20 BDT" name="Personal_Info_Test" finished-at="2024-12-07T09:28:55 BDT" duration-ms="35133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Personal_Info_Test -->
+        <test-method is-config="true" signature="report()[pri:0, instance:tests.Personal_Info_Test@3febb011]" started-at="2024-12-07T09:28:55 BDT" name="report" finished-at="2024-12-07T09:28:55 BDT" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+      </class> <!-- tests.Personal_Info_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Hospotal Portal -->
 </testng-results>
