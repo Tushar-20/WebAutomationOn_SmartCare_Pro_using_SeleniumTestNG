@@ -11,10 +11,12 @@ import com.aventstack.extentreports.ExtentTest;
 
 import basedriver.BaseDriver;
 import basedriver.PageDriver;
-import pages.LoginPage;
+import pages.Contact_Page;
+import pages.Personal_InfoPage;
+import pages.SignUpPage ;
 import utilities.ExtentFactory;
 
-public class LoginTest extends BaseDriver{
+public class Contact_Test extends BaseDriver{
 	ExtentReports report;
 	ExtentTest parentTest;
 	ExtentTest childTest;
@@ -24,15 +26,15 @@ public class LoginTest extends BaseDriver{
 		//PageDriver.getCurrentDriver().get(url);
 		//Thread.sleep(3000);
 		report = ExtentFactory.getInstance();
-		parentTest = report.createTest("<p style=\"color:#FF6000; font-size:20px\"><b>Health Care Pro LOGIN</b></p>").assignAuthor("QA TEAM").assignDevice("Windows");
+		parentTest = report.createTest("<p style=\"color:#FF6000; font-size:20px\"><b>Contact_Info Done</b></p>").assignAuthor("QA TEAM").assignDevice("Windows");
 		
 		
 	}
 	@Test
-	public void loginTest() throws InterruptedException, IOException {
-		childTest = parentTest.createNode("<p style=\"color:#3E96E7; font-size:20px\"><b>LOGIN</b></p>");
-		LoginPage login = new LoginPage(childTest );
-		login.login();
+	public void Contact_Test() throws InterruptedException, IOException {
+		childTest = parentTest.createNode("<p style=\"color:#3E96E7; font-size:20px\"><b>Contact_Info</b></p>");
+		Contact_Page Contact = new Contact_Page(childTest );
+		Contact.Contact_Info();
 	}
 	
 	@AfterClass
@@ -41,3 +43,5 @@ public class LoginTest extends BaseDriver{
 	}
 
 }
+
+

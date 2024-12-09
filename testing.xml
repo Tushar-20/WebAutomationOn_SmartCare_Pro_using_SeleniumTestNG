@@ -4,7 +4,9 @@
  <test name="Test">
    <classes>
    <class name ="tests.SignUpTest" />
-   <class name ="tests.Personal_Info_Test" />
+   <class name ="tests.Personal_Info_Test"/>
+   <class name="tests.Contact_Test"/>
+   <class name="tests.LoginTest"></class>
    </classes>
  </test>
 </suite>

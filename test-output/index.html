@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +104,22 @@
                     <div class="method-list-content passed suite-Hospotal_Portal">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hospotal_Portal" title="tests.Contact_Test" class="method navigator-link" hash-for-method="Contact_Test">Contact_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Hospotal_Portal" title="tests.Personal_Info_Test" class="method navigator-link" hash-for-method="Personal_Info_Test">Personal_Info_Test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Hospotal_Portal" title="tests.SignUpTest" class="method navigator-link" hash-for-method="SignUpTest">SignUpTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Hospotal_Portal" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Hospotal_Portal -->
@@ -154,6 +164,36 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Hospotal_Portal-class-passed -->
+          <div class="suite-Hospotal_Portal-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hospotal_Portal-class-passed -->
+          <div class="suite-Hospotal_Portal-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.Contact_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Contact_Test">
+                  </a> <!-- Contact_Test -->
+                  <span class="method-name">Contact_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hospotal_Portal-class-passed -->
         </div> <!-- panel Hospotal_Portal -->
         <div panel-name="test-xml-Hospotal_Portal" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -168,6 +208,8 @@
     &lt;classes&gt;
       &lt;class name=&quot;tests.SignUpTest&quot;/&gt;
       &lt;class name=&quot;tests.Personal_Info_Test&quot;/&gt;
+      &lt;class name=&quot;tests.Contact_Test&quot;/&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Hospotal Portal --&gt;
@@ -181,7 +223,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -207,20 +249,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Personal_Info_Test')
 data.setCell(0, 2, 'tests.Personal_Info_Test')
-data.setCell(0, 3, 35133);
+data.setCell(0, 3, 35704);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'SignUpTest')
-data.setCell(1, 2, 'tests.SignUpTest')
-data.setCell(1, 3, 2344);
+data.setCell(1, 1, 'Contact_Test')
+data.setCell(1, 2, 'tests.Contact_Test')
+data.setCell(1, 3, 24541);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'SignUpTest')
+data.setCell(2, 2, 'tests.SignUpTest')
+data.setCell(2, 3, 2413);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginTest')
+data.setCell(3, 2, 'tests.LoginTest')
+data.setCell(3, 3, 689);
 window.suiteTableData['Hospotal_Portal']= { tableData: data, tableDiv: 'times-div-Hospotal_Portal'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Hospotal_Portal">
               </div> <!-- times-div-Hospotal_Portal -->
             </div> <!-- times-div -->
@@ -235,11 +285,29 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Hospotal_Portal" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.Personal_Info_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">close</span>
+                <br/>
+                <span class="ignored-method-name">startBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">close</span>
+                <br/>
+                <span class="ignored-method-name">startBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.Contact_Test</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">close</span>
                 <br/>
@@ -262,37 +330,69 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">start</span>
-                <span class="method-start">2686 ms</span>
+                <span class="method-start">6805 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">SignUpTest</span>
-                <span class="method-start">7603 ms</span>
+                <span class="method-start">11713 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">report</span>
-                <span class="method-start">9950 ms</span>
+                <span class="method-start">14129 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.Personal_Info_Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">start</span>
-                <span class="method-start">10311 ms</span>
+                <span class="method-start">14735 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Personal_Info_Test</span>
-                <span class="method-start">10313 ms</span>
+                <span class="method-start">14739 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">report</span>
-                <span class="method-start">45447 ms</span>
+                <span class="method-start">50445 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Contact_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">start</span>
+                <span class="method-start">50617 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Contact_Test</span>
+                <span class="method-start">50619 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">report</span>
+                <span class="method-start">75164 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">start</span>
+                <span class="method-start">75445 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">75447 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">report</span>
+                <span class="method-start">76138 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.SignUpTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">close</span>
-                <span class="method-start">45594 ms</span>
+                <span class="method-start">76322 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

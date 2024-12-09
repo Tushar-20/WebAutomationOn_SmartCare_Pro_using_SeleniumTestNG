@@ -19,24 +19,23 @@ import utilities.GetScreenShot;
 public class LoginPage {
 	ExtentTest test;
 	
-	ExcelUtils excelData = new ExcelUtils();
 	
 	public LoginPage(ExtentTest test) {
 		PageFactory.initElements(PageDriver.getCurrentDriver(),this);
 		this.test = test;
 	}
 	
-	@FindBys ({
-		@FindBy(xpath="//body/div[@id='app']/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[1]/div[1]/div[2]/input[1]"),
-	     @FindBy(xpath=("//input[@name=\"username\"]"))
-	})
-	WebElement username;
+    @FindBy(xpath="//input[@placeholder='Add Username']")
+    WebElement username;
 	
-	@FindBy(xpath= ("//input[@name=\"password\"]"))
+	@FindBy(xpath= ("//input[@placeholder='Type Password']"))
 	WebElement password;
 	
-	@FindBy(xpath="//Button[@type=\"submit\"]")
-	WebElement loginButton;
+	@FindBy(xpath= ("//input[@placeholder='Type Confirm Password']"))
+	WebElement ConfirmPassword;
+	
+	@FindBy(xpath="//button[contains(text(),'Submit')]")
+	WebElement SubmitButton;
 	
 	public void failCase(String message, String scName) throws IOException {
 		test.fail("<p style=\"color:#FF5353; font-size:13px\"><b>"+message+"</b></p>");
@@ -62,40 +61,44 @@ public class LoginPage {
 	}
 	
 	public void login() throws InterruptedException, IOException {
-		excelData.ReadExcel();
 		try {
 			test.info("Please enter username");
 			if(username.isDisplayed()) {
-				username.sendKeys(excelData.username);
+				username.sendKeys("Tushar Chandra Sarker");
 				passCase("Username entered");
+				Thread.sleep(2000);
 			}
 			try {
 				test.info("Please enter Password");
 				if(password.isDisplayed()) {
-					password.sendKeys(excelData.password);
+					password.sendKeys("SarkerTushar2020@");
 					passCase("password send");
+					Thread.sleep(4000);
 				}
 				try {
+					test.info("Please enter Password Again");
+					if(ConfirmPassword.isDisplayed()) {
+						ConfirmPassword.sendKeys("SarkerTushar2020@");
+						passCase("password send again");
+					}
+				try {
 					test.info("Click on the login");
-					if(loginButton.isDisplayed()) {
-						loginButton.click();
+					if(SubmitButton.isDisplayed()) {
+						SubmitButton.click();
 						Thread.sleep(2000);
-						passCaseWithSc("Login Successful","loginPass.");
+						passCaseWithSc("SubmitButton create Successful","loginPass.");
 					}
 		} catch(Exception e) {
 			failCase("User name was not lacatable. Please check the error message.","usernameFail ");
-		}
-		
-		
+		}	
 		} catch(Exception e) {
 			failCase("Password was not lacatable. Please check the error message.","PasswordFail ");
 		}
-		
-		
-		
+		}catch(Exception e) {
+			failCase("Password didnot match. Please check the error message.","PasswordConfirmationFail ");
+		}
 		} catch(Exception e) {
-			failCase("Login Button was not locatable. Please check the error message.","LoginFail ");
+			failCase("SubmitButton was not locatable. Please check the error message.","LoginFail ");
 		}
 	}
-
 }
